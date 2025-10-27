@@ -32,7 +32,7 @@
         text-align: center;
         letter-spacing: -0.5px;
         display: grid;
-        grid-template-rows: 9% 1fr auto;
+        grid-template-rows: 10% 1fr auto;
         grid-template-columns: 1fr;
         grid-template-areas:
           "main"
@@ -44,6 +44,7 @@
       }
       header {
         grid-area: "header";
+
         ul {
           list-style: none;
           li {
@@ -72,11 +73,12 @@
 
       main {
         grid-area: "main";
+        padding: 20px;
 
         .main__main {
-          .main__input {
-            /* background-color: white; */
-          }
+          /* .main__input {
+            background-color: white;
+          } */
 
           input[type="text"] {
             padding: 20px;
@@ -176,6 +178,9 @@
           flex-direction: row;
           justify-content: space-between;
           width: 100%;
+          div {
+            padding: 10px 0px;
+          }
           .footer__main__links {
             order: 1;
             flex: 1;
